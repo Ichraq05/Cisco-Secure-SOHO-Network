@@ -49,6 +49,7 @@ L'utilisation du mode simulation permet d'inspecter l'encapsulation des données
 * **Simulation DNS :** L'environnement Packet Tracer ne simulant pas un "vrai" Internet, la résolution DNS récursive vers des domaines réels (ex: google.com) n'est pas fonctionnelle. La validation de la connectivité WAN repose donc sur l'accessibilité IP (Ping 8.8.8.8) qui prouve le routage et le NAT.
 
 ## Installation
+Ce projet ne nécessite aucune compilation.
 1.  Cloner le dépôt.
 2.  Ouvrir le fichier `.pkt` avec Cisco Packet Tracer (v8.0+).
-3.  Laisser le réseau converger (Spanning-Tree).
+3.  Attendre que les voyants oranges passent au vert (Convergence STP).
