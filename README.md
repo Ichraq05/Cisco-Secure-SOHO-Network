@@ -32,7 +32,7 @@ Validation de la commutation et du routage interne entre deux hôtes du réseau 
 ### B. Connectivité Externe (WAN & NAT)
 Le test critique consiste à joindre l'adresse simulée du FAI (`8.8.8.8`). Le succès de ce ping valide la mise en œuvre du **NAT**, permettant aux adresses privées internes d'être traduites en adresse publique routable.
 
-![Ping WAN](./Images/04_wan_connectivity_nat_test.png)
+![Ping WAN](./Images/04_wan_connectivity_naest.png)
 *Figure 4 : Succès des requêtes vers le réseau extérieur, confirmant le bon fonctionnement de la passerelle par défaut et de la traduction d'adresses.*
 
 ---
