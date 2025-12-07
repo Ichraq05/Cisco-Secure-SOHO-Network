@@ -6,7 +6,7 @@
 Ce projet de Master vise à concevoir, déployer et valider une architecture réseau complète pour une structure de type **SOHO (Small Office / Home Office)**. L'infrastructure simule un environnement de production intégrant adressage dynamique, routage, segmentation (VLANs) et accès sécurisé vers un FAI simulé.
 
 ## 1. Architecture Globale
-L'infrastructure repose sur une topologie hiérarchique centrée autour d'un routeur de bordure (ISR4321) assurant l'interconnexion entre le réseau local (LAN), le réseau sans-fil (WLAN) et le fournisseur d'accès Internet (WAN).
+L'infrastructure repose sur une topologie hiérarchique centrée autour d'un routeur de bordure assurant l'interconnexion entre le réseau local (LAN), le réseau sans-fil (WLAN) et le fournisseur d'accès Internet (WAN).
 
 ![Topologie](./Images/01_global_topology_overview.png)
 *Figure 1 : Vue d'ensemble de la topologie logique, incluant les routeurs, commutateurs, terminaux et le serveur de services.*
