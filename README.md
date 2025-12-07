@@ -1,52 +1,45 @@
-# Conception et Implémentation d'une Infrastructure Réseau SOHO
+# 📡 Conception et Implémentation d'une Infrastructure Réseau SOHO
 
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Cisco%20Packet%20Tracer-blue?style=flat-square&logo=cisco)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square) ![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-blue?style=flat-square&logo=cisco)
 
-## 📝 Résumé du Projet
-Ce projet de Master vise à concevoir, déployer et valider une architecture réseau complète pour une structure de type **SOHO (Small Office / Home Office)**. L'infrastructure simule un environnement de production intégrant adressage dynamique, routage, segmentation (VLANs) et accès sécurisé vers un FAI simulé.
+Une infrastructure réseau complète simulant un environnement d'entreprise (SOHO), axée sur la sécurité, la segmentation et l'automatisation des services.
 
-## 🏗️ 1. Architecture Globale
-L'infrastructure repose sur une topologie hiérarchique centrée autour d'un routeur de bordure assurant l'interconnexion entre le réseau local (LAN), le réseau sans-fil (WLAN) et le fournisseur d'accès Internet (WAN).
+## ✨ Technologies & Concepts
+* **Core:** Cisco Packet Tracer (v8.2), Cisco IOS.
+* **Réseau (L3):** Routage statique, NAT/PAT Overload, DHCP.
+* **Sécurité:** SSH Hardening, ACLs, Segmentation VLAN.
+* **Sans-fil:** WLAN sécurisé pour réseau invité.
+* **Protocoles:** TCP/IP, UDP, ICMP, DNS, HTTP.
 
+## 🚀 Fonctionnalités Clés
+
+### 🔒 Sécurité & Accès
+* **Hardening des Équipements :** Accès administratif sécurisé via SSH (vs Telnet) et chiffrement des mots de passe.
+* **Isolation du Trafic :** Segmentation stricte entre le réseau de production (LAN) et le réseau invité (WLAN).
+
+### 🌐 Connectivité & Routage
+* **Accès Internet Partagé :** Implémentation du **NAT Overload** permettant à tous les périphériques de sortir via une IP publique unique.
+* **Mobilité :** Réseau Wi-Fi fonctionnel pour tablettes et smartphones avec adressage dédié.
+
+### ⚙️ Automatisation
+* **Serveur DHCP Centralisé :** Allocation dynamique des adresses IP, passerelles et DNS pour réduire la configuration manuelle.
+* **Services Internes :** Simulation d'un serveur DNS local et HTTP pour les tests applicatifs.
+
+## 📸 Aperçu du Projet
+
+### 1. Architecture Globale
+Vue d'ensemble de la topologie en étoile étendue.
 ![Topologie](./Images/01_global_topology_overview.png)
-*Figure 1 : Vue d'ensemble de la topologie logique, incluant les routeurs, commutateurs, terminaux et le serveur de services.*
 
----
+### 2. Preuve de Connectivité (NAT)
+Le Ping vers `8.8.8.8` confirme que le réseau interne accède à Internet via la translation d'adresse.
+![Ping WAN](./Images/04_wan_connectivity_nat_test.png)
 
-## ⚙️ 2. Gestion et Automatisation (DHCP)
-Afin de simplifier l'administration des hôtes, le protocole DHCP a été déployé sur le routeur central. La capture ci-dessous valide l'allocation automatique des paramètres réseau (IP, Masque, Passerelle, DNS) aux clients.
-
-![Config DHCP](./Images/02_dhcp_config_verification.png)
-*Figure 2 : Validation de la configuration IP dynamique sur un poste client via la commande `ipconfig /all`.*
-
----
-
-## ✅ 3. Tests de Connectivité
-
-### A. Connectivité Interne (LAN)
-Validation de la commutation et du routage interne entre deux hôtes du réseau local. Ce test confirme que la couche 2 (VLANs/Trunks) et la couche 3 (Routage Inter-VLAN) sont fonctionnelles.
-
-![Ping LAN](./Images/03_lan_connectivity_pc_to_pc.png)
-*Figure 3 : Test ICMP réussi (Ping) entre PC1 et PC0, validant la communication sur le LAN.*
-
-### B. Connectivité Externe (WAN & NAT)
-Le test critique consiste à joindre l'adresse simulée du FAI (`8.8.8.8`). Le succès de ce ping valide la mise en œuvre du **NAT**, permettant aux adresses privées internes d'être traduites en adresse publique routable.
-
-![Ping WAN](./Images/04_wan_connectivity_nat.png)
-*Figure 4 : Succès des requêtes vers le réseau extérieur, confirmant le bon fonctionnement de la passerelle par défaut et de la traduction d'adresses.*
-
----
-
-## 🔬 4. Analyse Protocolaire (Modèle OSI)
-L'utilisation du mode simulation permet d'inspecter l'encapsulation des données. Ici, nous analysons un segment de la couche Transport (Layer 4) généré lors d'une requête DHCP.
-
+### 3. Analyse Technique (Modèle OSI)
+Inspection d'un paquet UDP montrant le fonctionnement interne du protocole DHCP.
 ![Analyse UDP](./Images/05_transport_layer_udp_analysis.png)
-*Figure 5 : Inspection d'un PDU (Protocol Data Unit) mettant en évidence l'utilisation du protocole **UDP** (User Datagram Protocol), choisi pour sa rapidité et son mode non-connecté, adapté aux diffusions DHCP.*
 
----
-
-## ⚠️ Note Technique
-* **Simulation DNS :** L'environnement Packet Tracer ne simulant pas un "vrai" Internet, la résolution DNS récursive vers des domaines réels (ex: google.com) n'est pas fonctionnelle. La validation de la connectivité WAN repose donc sur l'accessibilité IP (Ping 8.8.8.8) qui prouve le routage et le NAT.
+*(D'autres captures de validation sont disponibles dans le dossier `/Images`)*
 
 ## 🚀 Installation
 Ce projet ne nécessite aucune compilation.
