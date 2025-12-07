@@ -33,7 +33,7 @@ Vue d'ensemble de la topologie en étoile étendue.
 
 ### 2. Preuve de Connectivité (NAT)
 Le Ping vers `8.8.8.8` confirme que le réseau interne accède à Internet via la translation d'adresse.
-![Ping WAN](./Images/04_wan_connectivity_nat_test.png)
+![Ping WAN](./Images/04_wan_connectivity_nat.png)
 
 ### 3. Analyse Technique (Modèle OSI)
 Inspection d'un paquet UDP montrant le fonctionnement interne du protocole DHCP.
