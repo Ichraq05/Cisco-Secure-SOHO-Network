@@ -5,7 +5,7 @@
 ## 📝 Résumé du Projet
 Ce projet de Master vise à concevoir, déployer et valider une architecture réseau complète pour une structure de type **SOHO (Small Office / Home Office)**. L'infrastructure simule un environnement de production intégrant adressage dynamique, routage, segmentation (VLANs) et accès sécurisé vers un FAI simulé.
 
-## 1. Architecture Globale
+## 🏗️ 1. Architecture Globale
 L'infrastructure repose sur une topologie hiérarchique centrée autour d'un routeur de bordure assurant l'interconnexion entre le réseau local (LAN), le réseau sans-fil (WLAN) et le fournisseur d'accès Internet (WAN).
 
 ![Topologie](./Images/01_global_topology_overview.png)
@@ -13,7 +13,7 @@ L'infrastructure repose sur une topologie hiérarchique centrée autour d'un rou
 
 ---
 
-## 2. Gestion et Automatisation (DHCP)
+## ⚙️ 2. Gestion et Automatisation (DHCP)
 Afin de simplifier l'administration des hôtes, le protocole DHCP a été déployé sur le routeur central. La capture ci-dessous valide l'allocation automatique des paramètres réseau (IP, Masque, Passerelle, DNS) aux clients.
 
 ![Config DHCP](./Images/02_dhcp_config_verification.png)
@@ -21,7 +21,7 @@ Afin de simplifier l'administration des hôtes, le protocole DHCP a été déplo
 
 ---
 
-## 3. Tests de Connectivité
+## ✅ 3. Tests de Connectivité
 
 ### A. Connectivité Interne (LAN)
 Validation de la commutation et du routage interne entre deux hôtes du réseau local. Ce test confirme que la couche 2 (VLANs/Trunks) et la couche 3 (Routage Inter-VLAN) sont fonctionnelles.
@@ -37,7 +37,7 @@ Le test critique consiste à joindre l'adresse simulée du FAI (`8.8.8.8`). Le s
 
 ---
 
-## 4. Analyse Protocolaire (Modèle OSI)
+## 🔬 4. Analyse Protocolaire (Modèle OSI)
 L'utilisation du mode simulation permet d'inspecter l'encapsulation des données. Ici, nous analysons un segment de la couche Transport (Layer 4) généré lors d'une requête DHCP.
 
 ![Analyse UDP](./Images/05_transport_layer_udp_analysis.png)
@@ -45,10 +45,10 @@ L'utilisation du mode simulation permet d'inspecter l'encapsulation des données
 
 ---
 
-## Note Technique
+## ⚠️ Note Technique
 * **Simulation DNS :** L'environnement Packet Tracer ne simulant pas un "vrai" Internet, la résolution DNS récursive vers des domaines réels (ex: google.com) n'est pas fonctionnelle. La validation de la connectivité WAN repose donc sur l'accessibilité IP (Ping 8.8.8.8) qui prouve le routage et le NAT.
 
-## Installation
+## 🚀 Installation
 Ce projet ne nécessite aucune compilation.
 1.  Cloner le dépôt.
 2.  Ouvrir le fichier `.pkt` avec Cisco Packet Tracer (v8.0+).
