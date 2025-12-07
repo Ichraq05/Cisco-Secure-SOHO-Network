@@ -5,7 +5,7 @@
 Une infrastructure réseau complète simulant un environnement d'entreprise (SOHO), axée sur la sécurité, la segmentation et l'automatisation des services.
 
 ## ✨ Technologies & Concepts
-* **Core:** Cisco Packet Tracer (v8.2), Cisco IOS.
+* **Environnement:** Cisco Packet Tracer (v8.2), Cisco IOS.
 * **Réseau (L3):** Routage statique, NAT/PAT Overload, DHCP.
 * **Sécurité:** SSH Hardening, ACLs, Segmentation VLAN.
 * **Sans-fil:** WLAN sécurisé pour réseau invité.
