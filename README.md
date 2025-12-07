@@ -9,7 +9,7 @@ Ce projet de Master vise à concevoir, déployer et valider une architecture ré
 L'infrastructure repose sur une topologie hiérarchique centrée autour d'un routeur de bordure (ISR4321) assurant l'interconnexion entre le réseau local (LAN), le réseau sans-fil (WLAN) et le fournisseur d'accès Internet (WAN).
 
 ![Topologie](./Images/01_global_topology_overview.png)
-*Figure 1 : Vue d'ensemble de la topologie logique, incluant les zones commutées (Switchs 2960), le serveur de services et les terminaux clients.*
+*Figure 1 : Vue d'ensemble de la topologie logique, incluant les routeurs, commutateurs, terminaux et le serveur de services.*
 
 ---
 
