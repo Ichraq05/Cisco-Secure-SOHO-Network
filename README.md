@@ -1,5 +1,3 @@
-# Cisco-Secure-SOHO-Network
-
 # Conception et Implémentation d'une Infrastructure Réseau SOHO
 
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Cisco%20Packet%20Tracer-blue?style=flat-square&logo=cisco) ![Type](https://img.shields.io/badge/Type-Academic%20Project-orange?style=flat-square)
@@ -18,7 +16,7 @@ L'infrastructure repose sur une topologie hiérarchique centrée autour d'un rou
 ## 2. Gestion et Automatisation (DHCP)
 Afin de simplifier l'administration des hôtes, le protocole DHCP a été déployé sur le routeur central. La capture ci-dessous valide l'allocation automatique des paramètres réseau (IP, Masque, Passerelle, DNS) aux clients.
 
-![Config DHCP](./Images/02_dhcp_configuration_check.png)
+![Config DHCP](./Images/02_dhcp_config_verification.png)
 *Figure 2 : Validation de la configuration IP dynamique sur un poste client via la commande `ipconfig /all`.*
 
 ---
