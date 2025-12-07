@@ -54,6 +54,3 @@ L'utilisation du mode simulation permet d'inspecter l'encapsulation des données
 1.  Cloner le dépôt.
 2.  Ouvrir le fichier `.pkt` avec Cisco Packet Tracer (v8.0+).
 3.  Laisser le réseau converger (Spanning-Tree).
-
----
-*Projet Master Informatique - Université Côte d'Azur*
