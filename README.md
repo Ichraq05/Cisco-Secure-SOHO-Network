@@ -6,7 +6,7 @@ Une infrastructure réseau complète simulant un environnement d'entreprise (SOH
 
 ## ✨ Technologies & Concepts
 * **Environnement:** Cisco Packet Tracer (v8.2), Cisco IOS.
-* **Réseau (L3):** Routage statique, NAT/PAT Overload, DHCP.
+* **Réseau (L3):** Routage statique, NAT, DHCP.
 * **Sécurité:** SSH Hardening, ACLs, Segmentation VLAN.
 * **Sans-fil:** WLAN sécurisé pour réseau invité.
 * **Protocoles:** TCP/IP, UDP, ICMP, DNS, HTTP.
