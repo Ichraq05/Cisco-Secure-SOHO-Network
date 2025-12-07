@@ -1,5 +1,3 @@
-# Cisco-Secure-SOHO-Network
-
 # Conception et Implémentation d'une Infrastructure Réseau SOHO
 
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Cisco%20Packet%20Tracer-blue?style=flat-square&logo=cisco) ![Type](https://img.shields.io/badge/Type-Academic%20Project-orange?style=flat-square)
