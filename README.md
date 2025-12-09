@@ -41,7 +41,7 @@ Inspection d'un paquet UDP montrant le fonctionnement interne du protocole DHCP.
 
 *(D'autres captures de validation sont disponibles dans le dossier `/Images`)*
 
-## 🚀 Installation
+## 🚦 Installation
 Ce projet ne nécessite aucune compilation.
 1.  Cloner le dépôt.
 2.  Ouvrir le fichier `.pkt` avec Cisco Packet Tracer (v8.0+).
