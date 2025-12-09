@@ -1,4 +1,4 @@
-# 📡 Conception et Implémentation d'une Infrastructure Réseau SOHO
+# Conception et Implémentation d'une Infrastructure Réseau SOHO
 
 Une infrastructure réseau complète simulant un environnement d'entreprise (SOHO), axée sur la sécurité, la segmentation et l'automatisation des services.
 
