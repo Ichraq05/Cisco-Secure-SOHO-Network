@@ -1,7 +1,5 @@
 # 📡 Conception et Implémentation d'une Infrastructure Réseau SOHO
 
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square) ![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-blue?style=flat-square&logo=cisco)
-
 Une infrastructure réseau complète simulant un environnement d'entreprise (SOHO), axée sur la sécurité, la segmentation et l'automatisation des services.
 
 ## ✨ Technologies & Concepts
