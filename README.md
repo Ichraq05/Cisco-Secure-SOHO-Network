@@ -13,15 +13,15 @@ Une infrastructure réseau complète simulant un environnement d'entreprise (SOH
 
 ## 🚀 Fonctionnalités Clés
 
-### 🔒 Sécurité & Accès
+### Sécurité & Accès
 * **Hardening des Équipements :** Accès administratif sécurisé via SSH (vs Telnet) et chiffrement des mots de passe.
 * **Isolation du Trafic :** Segmentation stricte entre le réseau de production (LAN) et le réseau invité (WLAN).
 
-### 🌐 Connectivité & Routage
+### Connectivité & Routage
 * **Accès Internet Partagé :** Implémentation du **NAT Overload** permettant à tous les périphériques de sortir via une IP publique unique.
 * **Mobilité :** Réseau Wi-Fi fonctionnel pour tablettes et smartphones avec adressage dédié.
 
-### ⚙️ Automatisation
+### Automatisation
 * **Serveur DHCP Centralisé :** Allocation dynamique des adresses IP, passerelles et DNS pour réduire la configuration manuelle.
 * **Services Internes :** Simulation d'un serveur DNS local et HTTP pour les tests applicatifs.
 
